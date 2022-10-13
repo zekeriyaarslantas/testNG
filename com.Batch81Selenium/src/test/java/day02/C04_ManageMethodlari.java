@@ -11,7 +11,7 @@ public class C04_ManageMethodlari {
         System.setProperty("webdriver.chrome.driver","src/resources/drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-       // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));//sayfa açılıncaya kadar max sn süresini test eder
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));//sayfa açılıncaya kadar max sn süresini test eder
         driver.get("https://techproeducation.com");
          /*
         ileride wait daha geniş olarak ele alacağız.

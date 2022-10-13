@@ -14,7 +14,7 @@ public class C02_ManageMethodlari {
         System.out.println("Pencere konumu = "+driver.manage().window().getPosition()); // Açılan browser'ın konumu verir
         System.out.println("Pencere olculeri = "+driver.manage().window().getSize()); // Açılan browser'ın olcülerini verir
         //Sayfayi simge durumuna getirin
-       // driver.manage().window().minimize(); // Pencereyi simge durumuna getirir
+        driver.manage().window().minimize(); // Pencereyi simge durumuna getirir
         //simge durumunda 3 saniye bekleyip sayfayi maximize yapin
         Thread.sleep(3000);
         driver.manage().window().maximize();
